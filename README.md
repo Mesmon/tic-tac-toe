@@ -18,3 +18,10 @@ To determine the winner of the game I've used a simple algorithm that checks the
 The client is a simple react app. The GamePage component is the main component that handles the game state. For making the game "Real-Time" I've decided to poll the game server every 0.5 seconds to get the most updated game state. Would have used web-sockets if I was more proficient working with the technology.
 
 The GamePage component has a Board component that renders the board. The Board component is a simple component that renders the board with divs. It also shows the game status, current player, winner and a button to reset the game.
+
+## How to run
+cd into the server directory and run `npm install` and then `npm start`. The server will start listening on port 3000.
+cd into the client directory and run `npm install` and then `npm start`. The client will start on port 3000.
+
+## How to play
+You can open now the client on 2 different tabs and play against yourself.
