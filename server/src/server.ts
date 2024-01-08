@@ -1,8 +1,12 @@
 import fastify from "fastify";
 import router from "./routes/index.js";
+import cors from '@fastify/cors'
 
 const app = fastify();
 
+await app.register(cors, {
+  origin: '*',
+})
 await app.register(router);
 
 export const startGameServer = async (port: number) => {
