@@ -5,6 +5,7 @@ import cors from '@fastify/cors'
 const app = fastify();
 
 await app.register(cors, {
+  // required for running locally with frontend
   origin: '*',
 })
 await app.register(router);
